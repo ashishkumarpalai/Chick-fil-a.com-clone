@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: apercu,sans-serif;;
+}
+img{
+    width: 30%;
+}
+.payment-wrapper{
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: rgb(235, 235, 235);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px;
+    padding-left: 70px;
+}
+.p1,.p2{
+    width: 50%;
+}
+
+button{
+    font-size: 18px;
+    background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-family: apercu,sans-serif;
+    padding: 15px 14px 14px 15px;
+    border: none;
+}
+button:hover{
+    background: linear-gradient(-180deg,#d0021b,#d0021b 49%,#af272f);
+    box-shadow: 0 2px 18px 0 rgb(0 0 0 / 20%);
+    color: #fff;
+    transform: translateY(-1px);
+    transition: all .3s ease-in-out;
+}
+.check-btn{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input,select{
+    margin-bottom: 10px;
+    border: none;
+    width: 80%;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+
+@media screen and (max-width:900px) {
+    .payment-wrapper{
+     flex-direction: column;
+      padding: 0;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+    input,select{
+        width: 100%;
+    }
+
+}
+.otp-ui{
+    width: 30%;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
+    display: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    .otp-ui a{
+        display: block;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .otp-ui input,.otp-ui button{
+        padding:10px;
+        margin-top: 20px;
+    }
+    
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
