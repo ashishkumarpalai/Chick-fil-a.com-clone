@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="./css/payment.css">
+</head>
+<body>
+    
+    <form id="pay">
+         <div class="payment-wrapper">
+        <div class="p1">
+            <h2>Shipping Address</h2>
+            <label for="name">Full Name</label><br>
+            <input id="5"type="text" required><br>
+
+            <label for="email">Email</label><br>
+            <input id="6"type="email" required><br>
+
+            <label for="name">Address</label><br>
+            <input id="7"type="text" required><br>
+
+            <label for="name">City</label><br>
+            <input id="8"type="text" required><br>
+
+            <label for="name">State</label> <br>
+            <input id="9"type="text" required> <br>
+
+            <label for="zip">Zip</label><br>
+            <input id="10"type="number" required><br>
+        </div>
+
+
+
+        <div class="p2">
+            <h2>Payment</h2>
+            <p>Accepted Cards</p>
+            <img src="./data/Credit-Card-Logos.jpg" alt=""><br>
+
+            <label for="card-name">Name On Card</label><br>
+            <input id="1" type="text" required><br>
+
+            <label for="cardno">Card Number</label><br>
+            <input id="2" type="number" required><br>
+
+            <label for="exp">Exp Month</label><br>
+            <select name="month" id="month" required>
+                <option value="jan">JAN</option>
+                <option value="feb">FEB</option>
+                <option value="mar">MAR</option>
+                <option value="apr">APR</option>
+                <option value="may">MAY</option>
+                <option value="jun">JUN</option>
+                <option value="jul">JUL</option>
+                <option value="aug">AUG</option>
+                <option value="sept">SEPT</option>
+                <option value="oct">OCT</option>
+                <option value="nov">NOV</option>
+                <option value="dec">DEC</option>
+            </select><br>
+            <label for="year">Exp Year</label><br>
+            <input id="3" type="number" id="exp-year" placeholder="2022" required><br>
+            <label for="cvv">CVV</label><br>
+            <input id="4" type="number" placeholder="123" required><br>
+        </div>
+    </div>
+    <button type="submit"class="check-btn">Proceed To Checkout</button>
+    </form>
+    <div class="otp-ui">
+        <h3>Enter OTP Here...</h3>
+        <input type="number" maxlength="4" id="otp-check">
+        <button id="submit">Submit</button>
+        <a href="#" id="link">click here to abort</a>
+       </div>
+</body>
+<script src="./scripts/payment.js"></script>
+</html>
