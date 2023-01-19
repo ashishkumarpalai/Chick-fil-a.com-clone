@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #485259
+}
+.happy{
+    background-image: url("https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-desktop-new-3.jpg");
+    background-size: cover;
+    background-position-y: initial;
+}
+
+.footer-img-wrapper{
+    width: 40%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: relative;
+    text-align: center;
+    padding: 10px 50px;
+    margin-left: auto;
+}
+.footer-img-wrapper>img{
+    width: 200px;
+}
+h2{
+    font-family: apercu,sans-serif;
+    font-weight: 400;
+}
+.tagline{
+    color: #485259;
+}
+.tagline+p{
+    font-size: 12px;
+    font-family: apercu,sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+}
+.playstore{
+    width:62%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.playstore:hover{
+    cursor: pointer;
+}
+.red-button{
+    font-size: 18px;
+    background: linear-gradient(-180deg,rgba(254,67,108,.99),rgba(221,0,49,.99) 49%,#c20726);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-family: apercu,sans-serif;
+    padding: 15px 14px 14px 15px;
+    border: none;
+}
+.red-button:hover{
+    background: linear-gradient(-180deg,#d0021b,#d0021b 49%,#af272f);
+    box-shadow: 0 2px 18px 0 rgb(0 0 0 / 20%);
+    color: #fff;
+    transform: translateY(-1px);
+    transition: all .3s ease-in-out;
+}
+.red-button+p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: apercu sans-serif;
+    padding: 8px;
+}
+p>a{
+    text-decoration: none;
+    color: #dd0031;
+    font-family: apercu,sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 3px;
+}
+p>a:hover{
+    text-decoration: underline;
+}
+.last-div ul{
+    list-style: none;
+    position: relative;
+    display: block;
+    list-style-image: none;
+    text-align: center;
+    overflow: hidden;
+    font-family: apercu,sans-serif;
+    color: #dd0031;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    float: left;
+    text-align: center;
+}
+
+
+.upper a{
+    color: #dd0031;
+    text-decoration: none;
+    font-family: apercu,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    
+    margin-right: 20px;
+    /* padding: 10px; */
+}
+.upper a:hover{
+    transition: color .5s ease;
+    color: #b00026;
+}
+.lower{
+    padding-top: 10px;
+}
+.lower a{
+    color: #485259;
+    text-decoration: none;
+    font-family: apercu,sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    /* padding: 10px; */
+    margin-right: 15px;
+}
+.lower a:hover{
+    text-decoration: underline;
+}
+.last-div{
+    display: flex;
+    /* border:1px solid red; */
+    width: 95%;
+    margin:auto;
+    padding-top: 30px;
+    justify-content: space-between;
+
+}
+.social {
+    width: 20%;
+}
+.social img{
+    width:100%;
+}
+.social img:hover{
+    cursor: pointer;
+}
+.content{
+    width: 67%;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+.last-div p{
+    font-family: apercu,sans-serif;
+    color: #485259;
+    padding-top: 10px;
+    font-size: 12px;
+}
+@media screen and (max-width:1140px){
+    .footer-img-wrapper{
+        width: 100%;
+        margin: auto;
+        height: 1150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        padding-top:90%;
+        bottom: 0;
+        right: 0;
+        width: fit-content;
+        height: fit-content;
+        
+    }
+    .happy{
+        background-image: url("https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Footer%20Images/footer-burger-phone-mobile-new-3.jpg");
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .playstore{
+        margin: auto;
+        width: fit-content;
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+    .last-div{
+        flex-direction: column;
+        margin: auto;
+    }
+    .upper{
+        margin: auto;
+       
+    }
+    .lower{
+        margin: auto;
+        
+    }
+    .content{
+        width: 100%;
+        margin: auto;
+    }
+    .social{
+        padding: 10px;
+        margin: auto;
+        width: auto;
+    }
+    .social img{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .lower a{
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .upper a{
+        display: block;
+        text-align: center;
+        line-height: 40px;
+    }
+    .last-div p{
+        text-align: center;
+    }
+}
