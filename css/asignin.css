@@ -1,0 +1,47 @@
+
+        /* Form styling */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            color: green;
+        }
+        form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        label {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        }
+
+        input {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        }
+
+        button {
+        padding: 0.5rem 1rem;
+        }
+        .login{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            height: 500px;
+        }
+        button{
+            background-color: teal;
+            border: 0px;
+            border-radius: 8px;
+            color: white;
+            width: 80px;
+        }
+        
