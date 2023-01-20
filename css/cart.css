@@ -4,10 +4,46 @@
     box-sizing: border-box;
 }
 #main{
+    margin-top: 50px;
     display: flex;
-    height: 400px;
-    width: 400px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    color: #D80331;
+}
+#cart{
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    height: 450px;
+}
+#items{
     border: 2px solid red;
+    width: 80%;
+    height: 100px;
+    color: #D80331;
+}
+#cartTotal{
+    border: 2px solid red;
+    width: 80%;
+    color: #D80331;
+    margin: 10px 0px;
+    height: 100px;
+}
+#paybtn{
+    border: 0px;
+    border-radius: 10px;
+    height: 45px;
+    font-size: 18px;
+    width: 50%;
+    background-color: #D80331;
+    color: white;
 }
 #container{
     display: grid;

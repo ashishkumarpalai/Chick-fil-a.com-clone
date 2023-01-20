@@ -1,4 +1,5 @@
 let container=document.getElementById("container");
+let sortingSelect=document.getElementById("sortingSelect");
 let fetched=[];
 fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite")
 .then(res=> res.json())
@@ -8,7 +9,15 @@ fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite")
 })
 .catch(err=>console.log(err));
 
-
+sortingSelect.addEventListener("change",(e)=>{
+    if(e.target.value=="lth"){
+        let newData=fetched.sort((a,b)=>a.price-b.price);
+        getCards(newData);
+    }else if(e.target.value=="htl"){
+        let newData=fetched.sort((a,b)=>b.price-a.price);
+        getCards(newData);
+    }
+})
 function getCards(data){
     container.innerHTML=null;
     data.forEach((ele)=>{
