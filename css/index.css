@@ -714,7 +714,7 @@ width:40%;
 	}
 }
 /* media query */
-@media only screen and (max-width: 991px) and (min-width:300px)  {
+@media screen and (max-width:1140px) {
 	.v-center{
 		align-items: center;
 		display: flex;
@@ -731,6 +731,10 @@ width:40%;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		transition: 0.6s;
 	}
+	.food-img{
+		width: 100%;
+		border-radius: 0px 15px 15px 0px;
+	  }
 	.wrapper{
 		width: 100%;
 		padding-top:30px;
@@ -739,6 +743,12 @@ width:40%;
 		flex-direction: column;
 		justify-content: space-evenly;
 	  
+	}
+	.both-btn-section{
+		margin-left: 30px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
 	}
 	.customer-favourite-limitedTime{
 		width: 100%;
@@ -796,6 +806,9 @@ width:40%;
 	  text-align: center;
 	  
 	}
+	.catering1>button{
+		width:100%;
+	}
 	.reward{
 		width:100%;
 		margin-top: 30px;
@@ -820,6 +833,12 @@ width:40%;
 	.reward>div:nth-child(2)>img{
 		width:100%;
 		margin-top: 10px;
+	}
+	.reward>div:nth-child(1)>button{
+		width:100%;
+	}
+	.reward>div:nth-child(2)>button{
+		width:100%;
 	}
 	.e-gift-card{
 		width:100%;
@@ -848,6 +867,10 @@ width:40%;
 	}
 	.celebrate>div:nth-child(2)>i{
 		width: 100%;
+	}
+	.celebrate>div>button{
+		width:100%;
+		margin-bottom:20px;
 	}
 }
 
