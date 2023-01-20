@@ -1,47 +1,56 @@
-
-        /* Form styling */
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        h1{
-            text-align: center;
-            color: green;
-        }
-        form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-        label {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-        }
-
-        input {
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        }
-
-        button {
-        padding: 0.5rem 1rem;
-        }
-        .login{
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 20px;
-            width: 400px;
-            margin: auto;
-            margin-top: 20px;
-            border-radius: 8px;
-            height: 500px;
-        }
-        button{
-            background-color: teal;
-            border: 0px;
-            border-radius: 8px;
-            color: white;
-            width: 80px;
-        }
-        
+h1{
+    text-align: center;
+  }
+  #loginBtn {
+    background-color: green;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    margin-left: 40%;
+  } 
+  #loginBtn:hover{
+    background-color: #0077C9;
+    color:wheat;
+  }
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #FFF;
+    background-color: #c90000;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #0077C9;
+    color: #FFF;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 40%;
+  }
+  #form:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
