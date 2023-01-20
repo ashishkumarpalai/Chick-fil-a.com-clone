@@ -3,6 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
+#main{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border: 2px solid red;
+}
 #container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
