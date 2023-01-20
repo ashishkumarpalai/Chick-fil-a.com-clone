@@ -43,7 +43,12 @@ a {
 	text-decoration: none;
 	margin: 15px 0;
 }
-
+.submit{
+	background-color: #FF4B2B;
+	color: white;
+	border-radius: 20px;
+	max-width: 400px;
+}
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;

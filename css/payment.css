@@ -67,6 +67,7 @@ input,select{
 .otp-ui{
     width: 30%;
     padding: 50px;
+    margin-bottom: 2000px;
     margin: auto;
     text-align: center;
     display: none;
