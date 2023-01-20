@@ -4,29 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/admin.css">
     <title>Document</title>
    
 </head>
 <body>
-    <h1 id="h1">ADMIN</h1>
-    <div id="main">
-        <div id="first">
-            <div>HOME</div>
-            <div>SERVICE</div>
-            <div>CLINT</div>
-            <div>PRODUT</div>
+    <div id="adminPage">
+        <div id="sidebar">
+          <h2>Admin Panel</h2>
+          <ul>
+            <li><a href="#menu" class="nav-link">Menu Management</a></li>
+            <li><a href="#orders" class="nav-link">Order Management</a></li>
+            <li><a href="#customers" class="nav-link">Customer Management</a></li>
+          </ul>
+          <P>ADD PRODUCT</P>
+          <div>
+            <form id="form" action="" onsubmit="formData()">
+              <label for="">Enter Name</label>
+              <input type="text" name="" class="form1" id="name" placeholder="Enter Name">
+              <label for="">Enter Image Url</label>
+              <input type="text" name="" class="form1" id="image" placeholder="Enter Image Url">
+              <label for="">Enter Price</label>
+              <input type="text" name="" class="form1" id="price" placeholder="Enter Price">
+              <label for="">Enter Calories</label>
+              <input type="text" name="" class="form1" id="calories" placeholder="Enter Calories">
+              <label for="">Enter Category</label>
+              <input type="text" name="" class="form1" id="category" placeholder="Enter Category">
+              <label for="">Enter Description</label><br>
+              <input type="text" name="" class="form1" id="desc" placeholder="Enter Description"><br>
+              <!-- <button id="add">Submit</button> -->
+              <button id="addBtn">Add Item</button>
+            </form>
+          </div>
         </div>
-        <div id="second">
-            <div id="second1">
-                <h1 id="well">WELLCOME TO QUICKBITE</h1>
-                <hr>
-                <form action="">
-                    <input id="serch" type="text" placeholder="Serch....">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+        <div id="main">
+          <div id="menu" class="content">
+            <h1>Menu Management</h1>
+            <h3>Total Product:- <span id="total">0</span></h3>
+            <table id="menuTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>calories</th>
+                  <th>category</th>
+                  <th>Price</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="menuBody"></tbody>
+            </table>
+            
+          </div>
+          <div id="orders" class="content">
+            <h1>Order Management</h1>
+            <table id="orderTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Customer</th>
+                  <th>Items</th>
+                  <th>Total</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="orderBody"></tbody>
+            </table>
+          </div>
+          <div id="customers" class="content">
+            <h1>Customer Management</h1>
+            <table id="customerTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="customerBody"></tbody>
+            </table>
+          </div>
         </div>
-    </div>
+      </div>
+      
 </body>
 </html>
+<script src="scripts/admin.js"></script>
