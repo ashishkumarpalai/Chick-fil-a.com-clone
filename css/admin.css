@@ -1,25 +1,77 @@
-
-#h1{
-    text-align: center;
-}
-#main{
+#adminPage {
     display: flex;
-    width: 95%;
-    margin: auto;
-    border: 1px solid red;
-}
-#first{
+    height: 100%;
+  }
+  #sidebar {
     width: 20%;
-    border: 1px solid black;
-    padding-top: 200px;
-}
-#second{
+    background-color: #f1f1f1;
+    padding: 2em;
+  }
+  #sidebar h2 {
+    margin-bottom: 1em;
+  }
+  #sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #sidebar li {
+    margin-bottom: 0.5em;
+  }
+  #sidebar a {
+    color: #333;
+    text-decoration: none;
+  }
+  #main {
     width: 80%;
-}
-#well{
-    text-align: center;
-}
-form{
-    text-align: center;
-    font-size: ;
-}
+    padding: 2em;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+  }
+  #addBtn {
+    background-color: green;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+  }
+  .content {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  /* adding form ------------------------------------------start*/
+  form{
+      text-align: left;  
+  }
+  p{
+      font-weight: bold;
+      text-align: center;
+      color: #D80331;
+  }
+  #form{
+      margin: auto;
+      width: 80%;
+      font-family: sans-serif;
+      /* border: 1px solid red; */
+  }
+
+  .form1{
+      width: 100%;
+      border: 1px solid;
+      border-radius: 5px;
+      margin: 5px 0px;
+      height: 20px;
+      border: 2px solid black;
+  }
+
+  label{
+      color: blue;
+  }
+  /* adding form end-----------------------------------------end */
