@@ -1,26 +1,36 @@
+let loginUserUsername = document.getElementById("username");
+let loginUserPassword = document.getElementById("password");
+let loginUserButton = document.getElementById("loginBtn");
+let userLoginURL="https://cobalt-blue-jaguar-boot.cyclic.app/users"
 
- // Signup form submit event listener
+loginUserButton.addEventListener("click",(e)=>{
+  e.preventDefault();
+  fetch("./admin.json")
+  .then((data)=>{
+    return data.json();
+  })
+  .then((res)=>{
+    fetchdata=res;
+    adminsignin(res);
     
- console.log(userName.value,passWord.value)
- let emAil=document.getElementById("gmail")
- let userName=document.getElementById("username")
- let passWord=document.getElementById("password")
- let button=document.getElementById("btn")
- button.addEventListener("click",function(){
-     let obj={
-         username:userName.value,
-         password:passWord.value,
-         email:emAil.value
-     }
-     fetch("http://localhost:9090/register",{
-         method:"POST",
-         headers:{
-             "Content-Type": "application/json"
-         },
-          body:JSON.stringify(obj),
-     })
-     .then((res)=> res.json())
-     .then((data)=>alert(JSON.stringify(data)))
-     .catch((err)=> alert("error"))
- })
+    console.log(res)
+  })
+  .catch((error)=>{
+    console.log(error)
+  })
+})
+function adminsignin(data){
  
+  data.forEach((element) => {
+    if(loginUserUsername.value==element.username){
+      if(loginUserPassword.value==element.password){
+        alert("Wellcome To Quick Bite")
+        window.open("./admin.html")
+      }else{
+        alert("Wrong passsword renter your passsword")
+      }
+    }else{
+      alert("You are not admin")
+    }
+  });
+}
