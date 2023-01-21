@@ -37,11 +37,11 @@ Content-Type: application/json
 
 ### JSON Server PUT - Update Employee Data
 # Observe what happens to the rest of the fields
-PUT https://63c793ede52516043f4041a9.mockapi.io/QuickBite/64
+PUT https://63c793ede52516043f4041a9.mockapi.io/QuickBite/1
 Content-Type: application/json
 
 {
-  "desc": "a@gmail.com"
+  "price": "125"
 }
 
 

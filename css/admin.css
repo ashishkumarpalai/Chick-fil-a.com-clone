@@ -22,7 +22,12 @@
     color: #333;
     text-decoration: none;
   }
+  #sidebar a:hover{
+
+    font-weight: bold ;
+  }
   #main {
+    color:black;
     width: 80%;
     padding: 2em;
   }
@@ -30,7 +35,20 @@
     border-collapse: collapse;
     width: 100%;
   }
+  thead{
+    color: white;
+    background-color: #D80331;
+  }
+  th{
+    /* color: #9FA8DA; */
+    background-color: #d80331;
+  }
+  td:hover{
+    font-weight: bold;
+    background-color: #E1F5FE;
+  }
   th, td {
+    color: 9FA8DA;
     border: 1px solid #ddd;
     padding: 0.5em;
   }
@@ -72,6 +90,6 @@
   }
 
   label{
-      color: blue;
+      color:blue;
   }
   /* adding form end-----------------------------------------end */

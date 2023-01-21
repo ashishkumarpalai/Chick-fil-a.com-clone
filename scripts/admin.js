@@ -131,39 +131,39 @@ fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite/")
           <td>${item.email}</td>
           <td>
             <button class="editBtn" data-id="${item.id}">Edit</button>
-            <button class="deleteBtn" data-id="${item.id}">Delete</button>
+            <button class="deleteBtn" data-id="">Delete</button>
           </td>
         </tr>
       `;
     });
-    const deleteBtns = document.querySelectorAll(".deleteBtn");
-    deleteBtns.forEach(btn => {
-      btn.addEventListener('click', event => {
-        event.preventDefault();
-        const id = event.target.getAttribute('data-id');
-        if (confirm(`Are you sure you want to delete item with ID: ${id}?`)) {
-          // Delete item from API
-          fetch(`https://cobalt-blue-jaguar-boot.cyclic.app/users/${id}`, {
-            method: 'DELETE'
-          })
-          .then(response => {
-            if (response.ok) {
-              alert(`Item with ID ${id} deleted successfully`);
-              // remove the row from the table
-              event.target.closest('tr').remove();
-              total()
-            } else {
-              alert(`Error deleting item with ID ${id}`);
-            }
-          })
-          .catch(error => {
-            console.error(error);
-            alert(`Error deleting item with ID ${id}`);
-          });
-        }
-      });
+    // const deleteBtns = document.querySelectorAll(".deleteBtn");
+    // deleteBtns.forEach(btn => {
+    //   btn.addEventListener('click', event => {
+    //     event.preventDefault();
+    //     const id = event.target.getAttribute('data-id');
+    //     if (confirm(`Are you sure you want to delete item with ID: ${id}?`)) {
+    //       // Delete item from API
+    //       fetch(`https://cobalt-blue-jaguar-boot.cyclic.app/users/${id}`, {
+    //         method: 'DELETE'
+    //       })
+    //       .then(response => {
+    //         if (response.ok) {
+    //           alert(`Item with ID ${id} deleted successfully`);
+    //           // remove the row from the table
+    //           event.target.closest('tr').remove();
+    //           total()
+    //         } else {
+    //           alert(`Error deleting item with ID ${id}`);
+    //         }
+    //       })
+    //       .catch(error => {
+    //         console.error(error);
+    //         alert(`Error deleting item with ID ${id}`);
+    //       });
+    //     }
+    //   });
       
-    });
+    // });
   })
   // fetch data-----------------------------------------------------------------------------end
 
