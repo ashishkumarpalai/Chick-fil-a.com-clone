@@ -6,6 +6,7 @@ img{
     width: 30%;
 }
 .payment-wrapper{
+    
     display: flex;
     /* border: 1px solid red; */
     background-color: rgb(235, 235, 235);
@@ -15,6 +16,7 @@ img{
     justify-content: space-between;
     padding: 20px;
     padding-left: 70px;
+    margin-top: 20px;
 }
 .p1,.p2{
     width: 50%;
@@ -65,6 +67,7 @@ input,select{
 
 }
 .otp-ui{
+    
     width: 30%;
     padding: 50px;
     margin-bottom: 2000px;
@@ -73,6 +76,7 @@ input,select{
     display: none;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 50px;
     }
     .otp-ui a{
         display: block;
@@ -89,4 +93,12 @@ input,select{
 }
 .none{
     display: none;
+}
+#go:hover{
+   text-decoration: underline;
+}
+
+h2{
+    color: black;
+    padding-bottom: 20px;
 }
