@@ -68,6 +68,13 @@ a{
 	font-weight: 700;
 	text-decoration: none;
 }
+#search-input{
+	margin-left: 20px;
+	padding:5px;
+	margin-top:10px;
+	border: 1px solid black;
+	margin-right: 5px;
+}
 .header .item-center{
 	flex:0 0 66%;
 }
@@ -773,6 +780,8 @@ width:40%;
 	.limited-time>div:nth-child(2){
 		margin-top: 20px;
 	}
+	
+	
 	.hungry-more{
 		width:100%;
 		margin-top: 30px;

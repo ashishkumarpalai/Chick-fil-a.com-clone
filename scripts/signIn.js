@@ -9,7 +9,7 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
-
+// ..................................................Sign In and Sign Up.......................................................
 let signIn = document.querySelector("#signIn");
 let signUp = document.querySelector("#signUp");
 

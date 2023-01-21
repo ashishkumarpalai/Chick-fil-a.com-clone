@@ -118,6 +118,9 @@ input {
 	width: 50%;
 	z-index: 2;
 }
+.u-login a{
+	color:#FF4B2B;
+}
 
 .container.right-panel-active .sign-in-container {
 	transform: translateX(100%);
