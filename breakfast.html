@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="css/cart.css">
+    <title>Breakfast</title>
+    <link rel="stylesheet" href="css/menu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -23,7 +23,7 @@
                         <img src="./Quick-Bite-logo-transformed (1).png">
                     </div>
                 </div>
-          
+        
                 <!-- menu start here -->
                 <div class="header-item item-center">
                     <div class="menu-overlay">
@@ -35,7 +35,6 @@
                             <div class="mobile-menu-close">&times;</div>
                         </div>
                         <ul class="menu-main">
-
                         <li>
                             <a href="#">Location</a>
                         </li>
@@ -85,7 +84,6 @@
                                 </div> 
                             </div>
                         </li>
-                        
                             <li class="menu-item-has-children">
                                 <a href="#">Stories <i class="fa fa-angle-down"></i></a>
                                 <div class="sub-menu mega-menu mega-menu-column-4">
@@ -95,40 +93,40 @@
                                     <div class="list-item text-center">
                                         <a href="#"><h4 class="title">Lifestyle</h4></a>
                                     </div>
-    
+
                                     <div class="list-item text-center">
                                         <a href="#"><h4 class="title">Inside Chick-fil-A</h4></a>	
                                     </div>
                                     <div class="vl"></div>
-    
+
                                     <div class="list-item text-center">
                                         <a href="#"><h4 class="title">News</h4></a>
                                     </div>
                                 </div>
                             </li>
                             <li class="menu-item-has-children">
-                               <a href="#">About<i class="fa fa-angle-down"></i></a>
-                               <div class="sub-menu mega-menu mega-menu-column-4">
-                                   <div class="list-item text-center">
-                                       <a href="#"><h4 class="title">Who We Are</h4></a>	
-                                   </div>
-                                   <div class="list-item text-center">
-                                       <a href="#"><h4 class="title">Great Food</h4></a>
-                                   </div>
-    
-                                   <div class="list-item text-center">
-                                       <a href="#"><h4 class="title">Giving Back</h4></a>	
-                                   </div>
-                                   <div class="list-item text-center">
-                                       <a href="#"><h4 class="title">History</h4></a>	
-                                   </div>
-                                   <div class="vl"></div>
-    
-                                   <div class="list-item text-center">
-                                       <a href="#"><h4 class="title">S. Truett Cathy Brands</h4></a>
-                                   </div>
-                               </div>
-                           </li>    
+                            <a href="#">About<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                                <div class="list-item text-center">
+                                    <a href="#"><h4 class="title">Who We Are</h4></a>	
+                                </div>
+                                <div class="list-item text-center">
+                                    <a href="#"><h4 class="title">Great Food</h4></a>
+                                </div>
+
+                                <div class="list-item text-center">
+                                    <a href="#"><h4 class="title">Giving Back</h4></a>	
+                                </div>
+                                <div class="list-item text-center">
+                                    <a href="#"><h4 class="title">History</h4></a>	
+                                </div>
+                                <div class="vl"></div>
+
+                                <div class="list-item text-center">
+                                    <a href="#"><h4 class="title">S. Truett Cathy Brands</h4></a>
+                                </div>
+                            </div>
+                        </li>    
                             <li class="menu-item-has-children">
                                 <a href="careers.html">Career <i class="fas fa-angle-down"></i></a>
                             </li>
@@ -136,12 +134,10 @@
                                 <a href="#">Account<i class="fas fa-angle-down"></i></a>
                                 <div class="sub-menu single-column-menu">
                                     <div class="u-login"><a href="./signIn.html">User Login</a></div>
-
-                                    <div class="a-login"><a href="asignin.html">Admin Login</a></div>
-
+                                    <div class="a-login"><a href="#">Admin Login</a></div>
                                 </div>
                             </li>
-    
+
                         </ul>
                     </nav>
                 </div>
@@ -158,17 +154,17 @@
             </div>
         </div>
     </header>
-    <!-- header end -->   
-    <div id="main">
-        <div id="cart">
-            <h1>Checkout</h1>
-            <div id="items">Total Items : <span id="totalItems">0</span></div>
-            <div id="cartTotal">Cart Total : <span id="cartValue">0</span></div>
-            <button id="paybtn">Order now</a></button>
-        </div>
-        <!-- Items from Cart are appended in this div -->
-        <div id="container"></div>
+    <!-- header end -->
+    <!-- Items from API are appended in this div -->
+    <div id="filter">
+        <h3>Sort By Price</h3>
+        <select name="" id="sortingSelect">
+            <option value="sort">sort by price</option>
+            <option value="lth">Low to high</option>
+            <option value="htl">High to low</option>
+        </select>
     </div>
+    <div id="container"></div>
     <!-- Footer Section Starts -->
     <footer>
         <div class="happy">
@@ -189,7 +185,7 @@
                     <img src="./data/google-play.png" alt="">
                 </div>
                 <button class="red-button">Learn More</button>
-                <p>Already have an account? <a href="signIn.html">Sign-in</a></p>
+                <p>Already have an account? <a href="#">Sign-in</a></p>
             </div>
         </div>
         <div class="last-div">
@@ -221,5 +217,5 @@
     </footer>
     <!-- Footer Section End Here -->
 </body>
-<script src="scripts/cart.js"></script>
+<script src="scripts/breakfast.js"></script>
 </html>

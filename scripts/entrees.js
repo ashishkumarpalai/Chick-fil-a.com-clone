@@ -1,20 +1,26 @@
 let container=document.getElementById("container");
 let sortingSelect=document.getElementById("sortingSelect");
 let fetched=[];
+let entrees=[];
 fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite")
 .then(res=> res.json())
 .then((data)=>{
     fetched=data;
-    getCards(data);
+    entrees=fetched.filter((ele)=>{
+        if(ele.category=="entrees"){
+            return true;
+        }
+    })
+    getCards(entrees);
 })
 .catch(err=>console.log(err));
 
 sortingSelect.addEventListener("change",(e)=>{
     if(e.target.value=="lth"){
-        let newData=fetched.sort((a,b)=>a.price-b.price);
+        let newData=entrees.sort((a,b)=>a.price-b.price);
         getCards(newData);
     }else if(e.target.value=="htl"){
-        let newData=fetched.sort((a,b)=>b.price-a.price);
+        let newData=entrees.sort((a,b)=>b.price-a.price);
         getCards(newData);
     }else if(e.target.value=="sort"){
         getCards(fetched);
