@@ -37,7 +37,7 @@ otpui.classList.add("block");
 
 localStorage.setItem("otp",JSON.stringify(otp))
 }else{
-    alert("Fill All The Fields Correctly")
+    swal("*Please fill all fields correctly");
 }
 })
 
@@ -52,8 +52,11 @@ otpbtn.addEventListener("click",()=>{
     let value=otpcheck.value;
     let store=JSON.parse(localStorage.getItem("otp"))
     if(value==store){
-        alert("Your Order has been placed")
+        swal("Payment Successful", "Your Order has been placed", "success");
+        setTimeout(()=>{
+            window.location.href="index.html"
+        },2000)
     }else{
-        alert("Please Enter Correct OTP")
+        swal("Please Enter Correct OTP");
     }
 })
