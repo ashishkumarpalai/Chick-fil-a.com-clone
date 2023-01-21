@@ -80,5 +80,8 @@ function checkoutValue(data){
 checkoutItem(cartData);
 checkoutValue(cartData);
 
-
+let logo=document.querySelector("#logo")
+logo.addEventListener("click",()=>{
+    window.location.assign("./index.html");
+})
 

@@ -58,3 +58,6 @@
  	}
  }
 
+document.querySelector(".fa-search").addEventListener("click",()=>{
+   console.log("its working")
+})
