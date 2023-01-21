@@ -1,6 +1,14 @@
 let container=document.getElementById("container");
 let cartData=JSON.parse(localStorage.getItem("cart"))||[];
+let totalItems=document.getElementById("totalItems");
+let cartValue=document.getElementById("cartValue");
+let paybtn=document.getElementById("paybtn");
+paybtn.addEventListener("click",(e)=>{
+    window.location.href="payment.html"
+})
+
 getCards(cartData);
+
 
 function getCards(data){
     container.innerHTML=null;
@@ -24,23 +32,53 @@ function getCards(data){
                 ele.quantity--;
                 quantity.innerText=ele.quantity;
             }
+            checkoutItem(cartData);
+            checkoutValue(cartData);
         })
         let plus=document.createElement("button");
         plus.setAttribute("class","qty");
         plus.innerText="+";
-        plus.addEventListener("click",()=>{
+        plus.addEventListener("click",(e)=>{
+            e.preventDefault();
             ele.quantity++;
             quantity.innerText=ele.quantity;
+            checkoutItem(cartData);
+            checkoutValue(cartData);
         })
         let btn=document.createElement("button");
         btn.innerText="Delete";
         btn.setAttribute("class","btn");
-        btn.addEventListener("click",()=>{
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault();
             cartData.splice(ind,1);
             localStorage.setItem("cart",JSON.stringify(cartData));
             getCards(cartData);
+            checkoutItem(cartData);
+            checkoutValue(cartData);
         })
         card.append(image,name,price,calories,minus,quantity,plus,btn);
         container.append(card);
     })
 }
+
+function checkoutItem(data){
+    let bag=0;
+    data.forEach((ele)=>{
+        bag+=ele.quantity;
+    })
+    totalItems.innerText=bag;
+}
+
+function checkoutValue(data){
+    let bag=0;
+    data.forEach((ele)=>{
+        bag+=(ele.quantity)*(ele.price);
+    })
+    cartValue.innerText=bag;
+}
+
+checkoutItem(cartData);
+checkoutValue(cartData);
+
+
+
