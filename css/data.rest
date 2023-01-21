@@ -27,7 +27,7 @@ GET https://cobalt-blue-jaguar-boot.cyclic.app/employees
 DELETE http://localhost:9090/employees/bt1DVx4Akm
 
 ### JSON Server PATCH - Update Employee Data
-PATCH https://cobalt-blue-jaguar-boot.cyclic.app/employees/1
+PATCH https://cobalt-blue-jaguar-boot.cyclic.app/users/4
 Content-Type: application/json
 
 {
@@ -37,11 +37,11 @@ Content-Type: application/json
 
 ### JSON Server PUT - Update Employee Data
 # Observe what happens to the rest of the fields
-PUT https://cobalt-blue-jaguar-boot.cyclic.app/employees
+PUT https://63c793ede52516043f4041a9.mockapi.io/QuickBite/1
 Content-Type: application/json
 
 {
-  "salary": 90000
+  "price": "125"
 }
 
 
@@ -52,15 +52,15 @@ GET https://cobalt-blue-jaguar-boot.cyclic.app//users
 GET http://localhost:9090/users/51
 
 ### POST Register a new user
-POST http://localhost:9090/user/register
+POST https://cobalt-blue-jaguar-boot.cyclic.app/user/register
 Content-Type: application/json
 
 {
-  "username": "heman",
+  "username": "hemann",
   "firstname": "he",
   "lastname": "man",
   "email": "heman@mail.com",
-  "password": "heman",
+  "password": "hemann",
   "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/762.jpg",
   "userLevel": 4
 }
