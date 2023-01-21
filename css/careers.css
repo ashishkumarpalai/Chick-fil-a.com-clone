@@ -7,7 +7,7 @@ body{
 }
 h1{
     text-align: center;
-
+    /* padding: auto; */
 }
 .head{
     padding: 140px;
@@ -77,6 +77,9 @@ h1{
     .values-grid{
         grid-template-columns: repeat(1,1fr);
     }
+    .head h1{
+        font-size: 35px; 
+    }
 
 }
 .purple{
@@ -111,6 +114,11 @@ h1{
     *{
         padding: 0;
         margin: 0;
+    }
+    .head{
+        padding: 50px;
+        padding-top: 20px;
+        margin-top: 70px;
     }
     .purple{
         margin-top: 100px;

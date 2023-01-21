@@ -46,6 +46,7 @@ h2{
     margin-top:20px;
     margin-bottom:30px;
 }
+
 .playstore:hover{
     cursor: pointer;
 }
@@ -170,14 +171,14 @@ li{
     .footer-img-wrapper{
         width: 100%;
         margin: auto;
-        height: 1150px;
+        /* height: 1150px; */
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1000px;
+        height: 800px;
         padding-top:90%;
         bottom: 0;
         right: 0;
-        width: fit-content;
+        /* width: fit-content; */
         height: fit-content;
         
     }
@@ -188,11 +189,14 @@ li{
         
     }
     .playstore{
-        margin: auto;
-        width: fit-content;
+        width: 100%;
         margin-top:20px;
         margin-bottom:30px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
     }
+ 
     .last-div{
         flex-direction: column;
         margin: auto;
@@ -211,8 +215,8 @@ li{
     }
     .social{
         padding: 10px;
-        margin: auto;
         width: auto;
+        margin: auto;
     }
     .social img{
         display: block;
