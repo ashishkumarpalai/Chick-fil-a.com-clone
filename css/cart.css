@@ -20,7 +20,7 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     padding: 20px;
-    width: 350px;
+    width: 25%;
     height: 450px;
 }
 #items{
@@ -49,7 +49,7 @@ h1{
     display: grid;
     width: 75%;
     grid-template-columns: repeat(3,1fr);
-    gap: 5px;
+    gap: 10px;
     text-align: center;
 }
 #container>div{
@@ -62,7 +62,7 @@ h1{
 }
 #container img{
     width: 100%;
-    height: 50%;
+    height: 57%;
 }
 #container h2{
     color: #055273;
@@ -94,10 +94,52 @@ h1{
     background-color: #78909C;
     font-size: 18px;
     width: 50px;
-    width: 10%;
+    width: 12%;
     height: 6%;
     margin: 10px;
     border: 0px;
     color: black;
     border-radius: 12px;
+}
+
+@media (max-width: 1250px) {
+    #container{
+        display: grid;
+        width: 66%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    #cart{
+        display: flex;
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        padding: 20px;
+        width: 33%;
+        height: 450px;
+    }
+}
+
+@media (max-width: 930px) {
+    #container{
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    #cart{
+        display: flex;
+        font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        padding: 20px;
+        width: 50%;
+        height: 450px;
+    }
 }

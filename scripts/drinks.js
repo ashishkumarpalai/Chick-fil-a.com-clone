@@ -23,7 +23,7 @@ sortingSelect.addEventListener("change",(e)=>{
         let newData=drinks.sort((a,b)=>b.price-a.price);
         getCards(newData);
     }else if(e.target.value=="sort"){
-        getCards(sides);
+        getCards(drinks);
     }
 });
 function getCards(data){

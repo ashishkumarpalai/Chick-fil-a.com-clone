@@ -4,7 +4,11 @@ let totalItems=document.getElementById("totalItems");
 let cartValue=document.getElementById("cartValue");
 let paybtn=document.getElementById("paybtn");
 paybtn.addEventListener("click",(e)=>{
-    window.location.href="payment.html"
+    if(totalItems.innerText==0){
+        alert("Cart is empty!")
+    }else{
+        window.location.href="payment.html"
+    }
 })
 
 getCards(cartData);
