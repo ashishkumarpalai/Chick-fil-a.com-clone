@@ -61,3 +61,64 @@
 document.querySelector(".fa-search").addEventListener("click",()=>{
    console.log("its working")
 })
+   const searchInput = document.getElementById("search-input");
+    const searchBtn = document.querySelector(".fa-search");
+
+    searchBtn.addEventListener("click", handleSearch);
+    searchInput.addEventListener("keyup", event => {
+        if (event.key === "Enter") {
+            handleSearch();
+        }
+    });
+
+    async function handleSearch() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const resultContainer = document.getElementById("container");
+      resultContainer.innerHTML = "";
+      try {
+        const response = await fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite/");
+        const data = await response.json();
+        const results = data.filter(item => {
+          return item.name.toLowerCase().includes(searchTerm);
+        });
+        if (results.length === 0) {
+          resultContainer.innerHTML = "No results found.";
+        } else {
+          results.forEach(ele => {
+            let card=document.createElement("div");
+            let image=document.createElement("img");
+            image.src=ele.image;
+            let name=document.createElement("h2");
+            name.innerText=ele.name;
+            let price=document.createElement("h4");
+            price.innerText=`Price: ₹ ${ele.price}`;
+            let calories=document.createElement("p");
+            calories.innerText=ele.calories+" "+"Calories per serving";
+            let btn=document.createElement("button");
+            btn.innerText="Order now";
+            btn.addEventListener("click",(e)=>{
+                  let cartData=JSON.parse(localStorage.getItem("cart"))||[];
+                  let count=0;
+                  for(let i=0;i<cartData.length;i++){
+                     if(ele.id===cartData[i].id){
+                        count=1;
+                        break;
+                     }
+                  }
+                  if(count){
+                     alert("Your dish is already in the cart");
+                  }else{
+                     cartData.push(ele);
+                     localStorage.setItem("cart",JSON.stringify(cartData));
+                     alert("Your dish is added to the cart");
+                  }
+            })
+            card.append(image,name,price,calories,btn);
+            container.append(card);
+          });
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+   //  serch function end
