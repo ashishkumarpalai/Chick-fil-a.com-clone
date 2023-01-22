@@ -5,21 +5,22 @@ fetch("https://63c793ede52516043f4041a9.mockapi.io/QuickBite")
 .then(res=> res.json())
 .then((data)=>{
     fetched=data;
+    sortingSelect.addEventListener("change",(e)=>{
+        if(e.target.value=="lth"){
+            let newData=fetched.sort((a,b)=>a.price-b.price);
+            getCards(newData);
+        }else if(e.target.value=="htl"){
+            let newData=fetched.sort((a,b)=>b.price-a.price);
+            getCards(newData);
+        }else{
+            getCards(data);
+        }
+    });
     getCards(data);
 })
 .catch(err=>console.log(err));
 
-sortingSelect.addEventListener("change",(e)=>{
-    if(e.target.value=="lth"){
-        let newData=fetched.sort((a,b)=>a.price-b.price);
-        getCards(newData);
-    }else if(e.target.value=="htl"){
-        let newData=fetched.sort((a,b)=>b.price-a.price);
-        getCards(newData);
-    }else if(e.target.value=="sort"){
-        getCards(fetched);
-    }
-});
+
 function getCards(data){
     container.innerHTML=null;
     data.forEach((ele)=>{
