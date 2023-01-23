@@ -10,7 +10,7 @@
 
 ## Home Page
 
-![5](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/5.png)
+![5](https://github.com/ashishkumarpalai/ordinary-finger-7814/blob/main/ReadMe%20SS/5.png)
 
 ## Footer 
 ![6](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/6.png)
