@@ -7,7 +7,7 @@
 + CSS
 + JAVASCRIPT
 
-#Content of Website
+# Content of Website
 + User Login
 + Admin Login 
 + Home Page
@@ -17,7 +17,7 @@
 + Payment Page
 + Admin Page
 
-#Functionalities
+# Functionalities
 + Fully Responsive Website
 + Search Functionality
 + Sorting
