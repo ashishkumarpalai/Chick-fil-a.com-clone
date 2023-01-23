@@ -21,10 +21,11 @@
 + This Website is Fully Responsive 
 + Login/Signup Page are Fully Functional
 + Fetching Data from Mock API
-+ Search Functionality(You can search Products from search bar)
-+ Sorting Functionality(You can sort Product By Price Low to High/High to Low.)
-+ Filtering Functionality(You can filter Products By their Categories.)
-+ Payment Page
++ Search Functionality(You can search products from search bar)
++ Sorting Functionality(You can sort product by price Low to High/High to Low.)
++ Filtering Functionality(You can filter products by their Categories. When you Hover on menu in Nav Bar you will get to see all the categories.)
++ Payment Page(Payment Page is Functional you can't proceed without adding all detail and you can't enter wrong OTP.)
++ Admin Page(You can do all the CRUD operation's from admin page.)
 
 ## Home Page
 
