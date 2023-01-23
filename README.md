@@ -22,3 +22,10 @@
 ![8](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/8.png)
 
 ![9](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/9.png)
+
+
+# Authors
++ Vishwajeet Deshmukh
++ Ashish Kumar Palai
++ Parmod Kumar
++ Ramanand Tiwari
