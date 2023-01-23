@@ -18,12 +18,13 @@
 + Admin Page
 
 # Functionalities
-+ Fully Responsive Website
-+ Search Functionality
-+ Sorting
-+ Filtering
-+ Login/Signup
-+ Fetching Data for Mock API
++ This Website is Fully Responsive 
++ Login/Signup Page are Fully Functional
++ Fetching Data from Mock API
++ Search Functionality(You can search Products from search bar)
++ Sorting Functionality(You can sort Product By Price Low to High/High to Low.)
++ Filtering Functionality(You can filter Products By their Categories.)
++ Payment Page
 
 ## Home Page
 
