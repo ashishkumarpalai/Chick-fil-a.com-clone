@@ -7,3 +7,18 @@
 + CSS
 + JAVASCRIPT
 
+
+## Home Page
+
+![5](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/5.png)
+
+## Footer 
+![6](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/6.png)
+
+## Career
+![7](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/7.png)
+
+## Menu
+![8](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/8.png)
+
+![9](https://github.com/nikkikharkwal/ordinary-finger-7814/blob/main/ReadMe%20SS/9.png)
