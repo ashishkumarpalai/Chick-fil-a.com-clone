@@ -7,6 +7,23 @@
 + CSS
 + JAVASCRIPT
 
+#Content of Website
++ User Login
++ Admin Login 
++ Home Page
++ Career Page
++ Menu/Product Page
++ Cart Page
++ Payment Page
++ Admin Page
+
+#Functionalities
++ Fully Responsive Website
++ Search Functionality
++ Sorting
++ Filtering
++ Login/Signup
++ Fetching Data for Mock API
 
 ## Home Page
 
