@@ -7,4 +7,4 @@
 + CSS
 + JAVASCRIPT
 
-![photo]()
+![photo](home.png)
